@@ -4,7 +4,7 @@ Bu Flutter teknolojisi kullanılarak oluşturulmuş bir kripto cüzdan uygulamas
 
 ## Nasıl Kullanılır?
 
-Apk klasörü içerisinde bulunan .apk uzantılı dosyayı telefonunuza indirerek basit bir şekilde kullanmaya başlayabilirsiniz. Yüklerken çıkan güveenlik sorunlarına aldırış etmeden ilerlediğiniz taktirde sorunsuz bir şekilde açılacaktır.
+Apk klasörü içerisinde bulunan .apk uzantılı dosyayı telefonunuza indirerek basit bir şekilde kullanmaya başlayabilirsiniz. Yüklerken çıkan güvenlik sorunlarına aldırış etmeden ilerlediğiniz taktirde sorunsuz bir şekilde açılacaktır.
 
 - [Proje Anlatım Videosu](https://www.youtube.com/watch?v=AvgsNyXIjpM)
 
