@@ -1,16 +1,18 @@
-# crypto_wallet
+# Kripto Cüzdan
 
-A new Flutter project.
+Bu Flutter teknolojisi kullanılarak oluşturulmuş bir kripto cüzdan uygulamasıdır. İstanbul Arel Üniversitesi, Bilgisayar Programcılığı bölümü, Mobil Programlama dersi final projesidir.
 
-## Getting Started
+## Nasıl Kullanılır?
 
-This project is a starting point for a Flutter application.
+Apk klasörü içerisinde bulunan .apk uzantılı dosyayı telefonunuza indirerek basit bir şekilde kullanmaya başlayabilirsiniz. Yüklerken çıkan güveenlik sorunlarına aldırış etmeden ilerlediğiniz taktirde sorunsuz bir şekilde açılacaktır.
 
-A few resources to get you started if this is your first Flutter project:
+- [Proje Anlatım Videosu](https://www.youtube.com/watch?v=AvgsNyXIjpM)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+# Crypto Wallet
+This is a crypto wallet application built using Flutter technology. It is the final project of Istanbul Arel University, Department of Computer Programming, Mobile Programming course.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+##How To Use
+
+You can start using it simply by downloading the .apk file in the apk folder to your phone. If you proceed without paying attention to the security problems that arise while installing, it will open without any problems.
+
+- [Project Expression Video(Turkish)](https://www.youtube.com/watch?v=AvgsNyXIjpM)
