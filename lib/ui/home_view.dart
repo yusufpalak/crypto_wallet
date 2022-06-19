@@ -34,11 +34,11 @@ class _HomeViewState extends State<HomeView> {
   Widget build(BuildContext context) {
     getValue(String id, double amount) {
       if (id == "bitcoin") {
-        return (bitcoin * amount);
+        return (bitcoin * amount).toStringAsFixed(1);
       } else if (id == "ethereum") {
-        return (ethereum * amount);
+        return (ethereum * amount).toStringAsFixed(1);
       } else {
-        return (tether * amount);
+        return (tether * amount).toStringAsFixed(1);
       }
     }
 

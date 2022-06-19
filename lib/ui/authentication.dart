@@ -24,6 +24,7 @@ class _AuthenticationState extends State<Authentication> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
+            SizedBox(height: MediaQuery.of(context).size.height / 10),
             Container(
               width: MediaQuery.of(context).size.width / 1.3,
               child: TextFormField(
@@ -78,7 +79,6 @@ class _AuthenticationState extends State<Authentication> {
                 child: Text("Kayıt Ol"),
               ),
             ),
-            SizedBox(height: MediaQuery.of(context).size.height / 35),
             Container(
               width: MediaQuery.of(context).size.width / 1.4,
               height: 45,
