@@ -1,3 +1,5 @@
+import 'package:crypto_wallet/net/flutterfire.dart';
+import 'package:crypto_wallet/ui/home_view.dart';
 import 'package:flutter/material.dart';
 
 class Authentication extends StatefulWidget {
@@ -20,28 +22,39 @@ class _AuthenticationState extends State<Authentication> {
           color: Colors.blueAccent,
         ),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            TextFormField(
-              controller: _emailField,
-              decoration: InputDecoration(
-                  hintText: "örnek@gmail.com",
-                  hintStyle: TextStyle(
-                    color: Colors.white,
-                  ),
-                  labelText: "Email",
-                  labelStyle: TextStyle(color: Colors.white)),
+            Container(
+              width: MediaQuery.of(context).size.width / 1.3,
+              child: TextFormField(
+                style: TextStyle(color: Colors.white),
+                controller: _emailField,
+                decoration: InputDecoration(
+                    hintText: "örnek@gmail.com",
+                    hintStyle: TextStyle(
+                      color: Colors.white,
+                    ),
+                    labelText: "Email",
+                    labelStyle: TextStyle(color: Colors.white)),
+              ),
             ),
-            TextFormField(
-              controller: _passwordField,
-              obscureText: true,
-              decoration: InputDecoration(
-                  hintText: "Şifreniz",
-                  hintStyle: TextStyle(
-                    color: Colors.white,
-                  ),
-                  labelText: "Şifre",
-                  labelStyle: TextStyle(color: Colors.white)),
+            SizedBox(height: MediaQuery.of(context).size.height / 35),
+            Container(
+              width: MediaQuery.of(context).size.width / 1.3,
+              child: TextFormField(
+                style: TextStyle(color: Colors.white),
+                controller: _passwordField,
+                obscureText: true,
+                decoration: InputDecoration(
+                    hintText: "Şifreniz",
+                    hintStyle: TextStyle(
+                      color: Colors.white,
+                    ),
+                    labelText: "Şifre",
+                    labelStyle: TextStyle(color: Colors.white)),
+              ),
             ),
+            SizedBox(height: MediaQuery.of(context).size.height / 35),
             Container(
               width: MediaQuery.of(context).size.width / 1.4,
               height: 45,
@@ -50,10 +63,22 @@ class _AuthenticationState extends State<Authentication> {
                 color: Colors.white,
               ),
               child: MaterialButton(
-                onPressed: (){},
+                onPressed: () async {
+                  bool shouldNavigate =
+                      await register(_emailField.text, _passwordField.text);
+                  if (shouldNavigate) {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => HomeView(),
+                      ),
+                    );
+                  }
+                },
                 child: Text("Kayıt Ol"),
               ),
             ),
+            SizedBox(height: MediaQuery.of(context).size.height / 35),
             Container(
               width: MediaQuery.of(context).size.width / 1.4,
               height: 45,
@@ -62,7 +87,18 @@ class _AuthenticationState extends State<Authentication> {
                 color: Colors.white,
               ),
               child: MaterialButton(
-                onPressed:() {},
+                onPressed: () async {
+                  bool shouldNavigate =
+                      await signIn(_emailField.text, _passwordField.text);
+                  if (shouldNavigate) {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => HomeView(),
+                      ),
+                    );
+                  }
+                },
                 child: Text("Giriş Yap"),
               ),
             ),
