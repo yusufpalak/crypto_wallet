@@ -11,7 +11,7 @@ Apk klasörü içerisinde bulunan .apk uzantılı dosyayı telefonunuza indirere
 # Crypto Wallet
 This is a crypto wallet application built using Flutter technology. It is the final project of Istanbul Arel University, Department of Computer Programming, Mobile Programming course.
 
-##How To Use
+## How To Use
 
 You can start using it simply by downloading the .apk file in the apk folder to your phone. If you proceed without paying attention to the security problems that arise while installing, it will open without any problems.
 
